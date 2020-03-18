@@ -7,6 +7,9 @@ import CardContent from '@material-ui/core/CardContent';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
+
+import WhoAmI from "./WhoAmI";
+import ReactDOM from 'react-dom';
 // import {withRouter} from 'react-router-dom';
 import { BrowserRouter, Route } from 'react-router-dom'
 
@@ -58,7 +61,15 @@ function SimpleCard(props) {
 
 <ButtonBase
           className={props.classes.cardAction}
-          onClick={event => {  props.history.push(`/target`) }}
+          onClick={event => {  
+            
+            //props.history.push(`/whoami`) 
+
+            //ReactDOM.render(<WhoAmI />)
+            ReactDOM.render(<WhoAmI />, document.getElementById('zed'));
+
+
+          }}
       >
 
         <CardContent>
