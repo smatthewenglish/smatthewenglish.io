@@ -7,6 +7,8 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+import 'typeface-roboto';
+
 const styles = {
   card: {
     minWidth: 275,
@@ -25,9 +27,24 @@ const styles = {
   },
 };
 
+class Hero {
+    constructor(name, level) {
+        this.name = name;
+        this.level = level;
+    }
+
+    // Adding a method to the constructor
+    greet() {
+        return `${this.name} says hello.`;
+    }
+}
+
 function SimpleCard(props) {
   const { classes } = props;
   const bull = <span className={classes.bullet}>•</span>;
+
+
+  const hero1 = new Hero('credentials', '"a benevolent ~ smile"');
 
   return (
     <div>
@@ -37,14 +54,14 @@ function SimpleCard(props) {
             Word of the Day
           </Typography>
           <Typography variant="headline" component="h2">
-            be{bull}nev{bull}o{bull}lent
+            {hero1.greet()}
           </Typography>
           <Typography className={classes.pos} color="textSecondary">
             adjective
           </Typography>
           <Typography component="p">
             well meaning and kindly.<br />
-            {'"a benevolent smile"'}
+            {hero1.level}
           </Typography>
         </CardContent>
         <CardActions>
@@ -56,7 +73,7 @@ function SimpleCard(props) {
 }
 
 SimpleCard.propTypes = {
-  classes: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(SimpleCard);
