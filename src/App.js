@@ -7,6 +7,9 @@ import CardContent from '@material-ui/core/CardContent';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
+// import {withRouter} from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom'
+
 const styles = {
   card: {
     minWidth: 275
@@ -41,20 +44,21 @@ class Hero {
     }
 }
 
+
+
 function SimpleCard(props) {
   const { classes } = props;
   const bull = <span className={classes.bullet}>•</span>;
 
 
-  const hero1 = new Hero('credentials', '"a benevolent ~ smile"');
-/*buttons are stupid, the card itself should be clickable*/
+
   return (
     <div>
       <Card className={classes.card}>
 
 <ButtonBase
           className={props.classes.cardAction}
-          onClick={event => { console.log("fuck") }}
+          onClick={event => {  props.history.push(`/target`) }}
       >
 
         <CardContent>

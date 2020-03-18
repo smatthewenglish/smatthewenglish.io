@@ -10,6 +10,9 @@ import ParticlesBg from "particles-bg";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 
+import { useHistory } from 'react-router-dom';
+import { createBrowserHistory } from 'history'
+
 class Particle extends Component {
   constructor() {
     super();
@@ -61,20 +64,23 @@ function Bio() {
 const rootElement = document.querySelector("#root");
 //render(<App />, document.getElementById('root'));
 //if (rootElement) {
+
+const history = createBrowserHistory()
+
   render(
     <div>
       <Grid container spacing={24}>
         
         <Grid item md={3}>
-          <App name="whoami" subject="autobiographic" desc={<Bio />} sub="personal introduction"/>
+          <App name="whoami" subject="autobiographic" desc={<Bio />} sub="personal introduction" history={history}/>
         </Grid>
 
         <Grid item md={3}>
-          <App name="tschess" subject="meisterstück" desc={<Tsc />} sub="the american football of chess"/>
+          <App name="tschess" subject="meisterstück" desc={<Tsc />} sub="the american football of chess" history={history}/>
         </Grid>
 
         <Grid item md={3}>
-          <App name="credentials" subject="institutional" desc={<Edu />} sub="formal education"/>
+          <App name="credentials" subject="institutional" desc={<Edu />} sub="formal education" history={history}/>
         </Grid>
        
 
