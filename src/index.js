@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import { render } from "react-dom";
 import ParticlesBg from "particles-bg";
 
-class App extends Component {
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
+
+class Particle extends Component {
   constructor() {
     super();
     this.state = {
@@ -24,8 +27,28 @@ class App extends Component {
   }
 }
 
-render(<App />, document.getElementById('root'));
-//ReactDOM.render(<App />, document.getElementById('root'));
+render(<Particle />, document.getElementById('zip'));
+
+const rootElement = document.querySelector("#root");
+//render(<App />, document.getElementById('root'));
+if (rootElement) {
+  render(
+    <div>
+      <Grid container spacing={24}>
+        <Grid item md={3}>
+          <App />
+        </Grid>
+        <Grid item md={3}>
+          <App />
+        </Grid>
+        <Grid item md={3}>
+          <App />
+        </Grid>
+      </Grid>
+    </div>,
+    rootElement
+  );
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
