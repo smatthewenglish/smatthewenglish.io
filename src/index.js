@@ -31,24 +31,28 @@ render(<Particle />, document.getElementById('zip'));
 
 const rootElement = document.querySelector("#root");
 //render(<App />, document.getElementById('root'));
-if (rootElement) {
+//if (rootElement) {
   render(
     <div>
       <Grid container spacing={24}>
         <Grid item md={3}>
-          <App />
+          <App name="Sara"/>
         </Grid>
         <Grid item md={3}>
-          <App />
+          <App name="Cahal"/>
         </Grid>
         <Grid item md={3}>
-          <App />
+          <App name="Edite"/>
         </Grid>
+
+
+
+
       </Grid>
     </div>,
     rootElement
   );
-}
+//}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

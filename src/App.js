@@ -7,8 +7,6 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-import 'typeface-roboto';
-
 const styles = {
   card: {
     minWidth: 275,
@@ -54,14 +52,14 @@ function SimpleCard(props) {
             Word of the Day
           </Typography>
           <Typography variant="headline" component="h2">
-            {hero1.greet()}
+            {props.name}
           </Typography>
           <Typography className={classes.pos} color="textSecondary">
             adjective
           </Typography>
           <Typography component="p">
             well meaning and kindly.<br />
-            {hero1.level}
+            {props.name}
           </Typography>
         </CardContent>
         <CardActions>
