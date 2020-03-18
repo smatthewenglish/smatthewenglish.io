@@ -1,16 +1,17 @@
 import React from 'react';
+
  
 const WhoAmI = () => {
     return (
-       <html>
-    <head>
-        <title>Example</title>
-    </head>
-    <body>
-        <p>This is an example of a simple HTML page with one paragraph.</p>
-        <div id="solala"></div>
-    </body>
-</html>
+     
+    <div class="row header">
+
+      <div id="zip-00"></div>
+      
+      <img class="sme-00" src="./brain.gif"/>
+
+    </div>
+
     );
 }
  
