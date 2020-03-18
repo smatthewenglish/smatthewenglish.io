@@ -1,4 +1,4 @@
-
+/*@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);*/
 
 * {
 	overflow: hidden;
@@ -109,70 +109,38 @@ background: black;
 
 
 
-@media only screen and (max-width: 768px) {
-    
-   .sme {
-	/*flex: 1;*/
-	/* border: 5px dashed purple;*/
-/*margin: 0;*/
-	/*height: fit-content;*/
-    width:100%;
-}
+
+
+
+
+
+
+
 
 .footer-social-icons {
-    width: fit-content;
-    /*display:block;*/
-    margin-top: 8px;
-    padding-bottom: 11px;
-   /* margin: 0 auto;*/
-  
-     display: flex;
-    flex-direction: row;
- 
-    
-    justify-content: space-between;
-}
-  
 
-}
+   /* border: 1px solid yellow;*/
 
-
-
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin:  1% 0 1% 0;
-}
-._12 {
-    font-size: 1.2em;
-}
-._14 {
-    font-size: 1.4em;
-}
-
-.footer-social-icons {
     width: fit-content;
     padding-top: 6px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
+
 .social-icon {
+
+   /* border: 1px dashed magenta;*/
+
+   /* width: fit-content;*/
+
     color: #fff;
     margin-left: 2.5px;
     margin-right: 2.5px;
 }
 .social-icons a {
+
     color: #fff;
     text-decoration: none;
 }
@@ -305,6 +273,158 @@ h6 {
 .fa-telegram:hover {
      background-color: #0088cc;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    
+  .sme {
+    width:100%;
+  }
+
+.fa {
+    padding:3px;
+    text-align:center;
+    font-size: 18px;   
+}
+
+.ai {
+    padding:3px;
+    text-align:center;
+    font-size: 18px;   
+}
+
+  .footer-social-icons {
+    width: 100%;
+
+    margin-top: 8px;
+    padding-bottom: 11px;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+.fa-instagram {
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+.fa-twitter {
+
+
+    /*padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-youtube {
+    /*padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+.fa-github {
+/*    padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-apple {
+   /* padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-stack-overflow {
+   /* padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.ai-google-scholar-square {
+   /* padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-soundcloud {
+    /*padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-envelope {
+   /* padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-spotify {
+   /* padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-reddit {
+  /*  padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-medium {
+   /* padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-meetup {
+  /*  padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-telegram {
+   /* padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+
+
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    /*     display: flex;
+  align-items: center;
+  justify-content: center;*/
+}
+
+
+}
+
+/*end mobile*/
+
 
 
 
