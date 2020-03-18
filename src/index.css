@@ -60,7 +60,7 @@ background: black;
 
     overflow:scroll;
     
-    border: 5px dashed green;
+  
 }
 
 #salad {
@@ -70,22 +70,24 @@ background: black;
 
 
 .box .row.footer {
+
+	 /* border: 5px dashed green;*/
+
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: fit-content;
 
-    background: blue;
+    background: black;
 
-    height: 200px;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .sme {
-	/*flex: 1;*/
-	 /*border: 5px dashed purple;*/
-
-	/*top:0;*/
-	/*margin-top: 25px;
-	margin-bottom: 25px;*/
 	position: fixed;
 }
 
@@ -104,17 +106,7 @@ background: black;
   background-repeat: no-repeat;
 }
 
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
-.foo {
-  background-color: blue;
-}
 
-.bar {
-  background-color: red;
-}
 
 
 @media only screen and (max-width: 768px) {
@@ -125,30 +117,151 @@ background: black;
 /*margin: 0;*/
 	/*height: fit-content;*/
     width:100%;
-	/*top:0;*/
-	/*margin-top: 25px;
-	margin-bottom: 25px;*/
-	/*position: fixed;*/
+}
 
+.footer-social-icons {
+    width: fit-content;
+    /*display:block;*/
+    margin-top: 8px;
+    padding-bottom: 11px;
+   /* margin: 0 auto;*/
+  
+     display: flex;
+    flex-direction: row;
+ 
+    
+    justify-content: space-between;
 }
   
 
 }
 
 
-/*
-<img class="photo0" src="./katz.gif"/>
-.photo0 {
-	border: 5px dashed purple;
- 
-	height: 20%;
-    width: auto;
 
-          position: absolute;
- -ms-flex-item-align: start;
-      align-self: flex-start;
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:  1% 0 1% 0;
 }
-*/
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+}
+
+.footer-social-icons {
+    width: fit-content;
+    /*display:block;*/
+  /*  padding-top: 6px;
+    padding-bottom: 3px;*/
+   /* margin: 0 auto;*/
+   padding-top: 6px;
+     display: flex;
+    flex-direction: row;
+ 
+    
+    justify-content: space-between;
+}
+.social-icon {
+    color: #fff;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+
+/*.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}*/
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-instagram {
+    padding:10px 14px;
+/*    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;*/
+
+    background-color: #322f30;
+    border-radius: 4px;
+    box-shadow: 0px 3px 10px rgba(255,255,255,.25);
+
+}
+.fa-instagram:hover {
+       color: #fff;
+   vertical-align: middle;
+  background-color: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.fa-twitter {
+    padding:10px 14px;
+/*    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;*/
+    background-color: #322f30;
+    border-radius: 4px;
+    box-shadow: 0px 3px 10px rgba(255,255,255,.25);
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+.fa-youtube {
+    padding:10px 14px;
+/*    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;*/
+    background-color: #322f30;
+    border-radius: 4px;
+    box-shadow: 0px 3px 10px rgba(255,255,255,.25);
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+/*.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}*/
+.fa-github {
+    padding:10px 14px;
+/*    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;*/
+    background-color: #322f30;
+    border-radius: 4px;
+    box-shadow: 0px 3px 10px rgba(255,255,255,.25);
+}
+.fa-github:hover {
+    background-color: #5a32a3;
+}
 
 
 
