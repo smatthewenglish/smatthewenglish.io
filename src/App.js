@@ -4,25 +4,29 @@ import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
+import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
 const styles = {
   card: {
-    minWidth: 275,
+    minWidth: 275
   },
   bullet: {
     display: 'inline-block',
     margin: '0 2px',
-    transform: 'scale(0.8)',
+    transform: 'scale(0.8)'
   },
   title: {
     marginBottom: 16,
-    fontSize: 14,
+    fontSize: 14
   },
   pos: {
-    marginBottom: 12,
+    marginBottom: 12
   },
+  cardAction: {
+    display: 'block',
+    textAlign: 'initial'
+  }
 };
 
 class Hero {
@@ -43,28 +47,37 @@ function SimpleCard(props) {
 
 
   const hero1 = new Hero('credentials', '"a benevolent ~ smile"');
-
+/*buttons are stupid, the card itself should be clickable*/
   return (
     <div>
       <Card className={classes.card}>
+
+<ButtonBase
+          className={props.classes.cardAction}
+          onClick={event => { console.log("fuck") }}
+      >
+
         <CardContent>
           <Typography className={classes.title} color="textSecondary">
-            Word of the Day
+           {props.subject}
           </Typography>
           <Typography variant="headline" component="h2">
             {props.name}
           </Typography>
           <Typography className={classes.pos} color="textSecondary">
-            adjective
+            
+            {props.sub}
+
           </Typography>
           <Typography component="p">
-            well meaning and kindly.<br />
-            {props.name}
+            
+            {props.desc}
+           
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Learn More</Button>
-        </CardActions>
+
+</ButtonBase>
+
       </Card>
     </div>
   );

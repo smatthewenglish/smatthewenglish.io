@@ -29,22 +29,54 @@ class Particle extends Component {
 
 render(<Particle />, document.getElementById('zip'));
 
+function Edu() {
+  return (
+    <div>
+      • Rheinische Friedrich-Wilhelms-Universität Bonn<br/>
+      • The University of Hong Kong (香港大學)<br/>
+      • 汉语水平考试 (Hanyu Shuiping Kaoshi)<br/>
+      • New York University (NYU)
+    </div>
+  );
+}
+
+function Tsc() {
+  return (
+    <div>
+      • iOS App<br/>
+      • Open Source
+    </div>
+  );
+}
+
+function Bio() {
+  return (
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+    </div>
+  );
+}
+
 const rootElement = document.querySelector("#root");
 //render(<App />, document.getElementById('root'));
 //if (rootElement) {
   render(
     <div>
       <Grid container spacing={24}>
+        
         <Grid item md={3}>
-          <App name="Sara"/>
-        </Grid>
-        <Grid item md={3}>
-          <App name="Cahal"/>
-        </Grid>
-        <Grid item md={3}>
-          <App name="Edite"/>
+          <App name="whoami" subject="autobiographic" desc={<Bio />} sub="personal introduction"/>
         </Grid>
 
+        <Grid item md={3}>
+          <App name="tschess" subject="meisterstück" desc={<Tsc />} sub="the american football of chess"/>
+        </Grid>
+
+        <Grid item md={3}>
+          <App name="credentials" subject="institutional" desc={<Edu />} sub="formal education"/>
+        </Grid>
+       
 
 
 
