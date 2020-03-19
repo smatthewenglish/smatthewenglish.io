@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
+import ParticlesBg from "particles-bg";
 
 import WhoAmI from "./WhoAmI";
 import ReactDOM from 'react-dom';
@@ -63,12 +64,16 @@ function SimpleCard(props) {
           className={props.classes.cardAction}
           onClick={event => {  
             
-            //props.history.push(`/whoami`) 
 
-            //ReactDOM.render(<WhoAmI />)
+            // props.history.push(`/whoami`) 
             ReactDOM.render(<WhoAmI />, document.getElementById('zed'));
 
 
+            const rZ = document.querySelector("#zip-00");
+            if (rZ) {
+              ReactDOM.render(<PMrrr />, document.getElementById('zip-00'));
+            }
+            
           }}
       >
 
@@ -103,3 +108,25 @@ SimpleCard.propTypes = {
 };
 
 export default withStyles(styles)(SimpleCard);
+
+
+
+class PMrrr extends Component {
+  constructor() {
+    super();
+    this.state = {
+      name: "React"
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <ParticlesBg type="circle" num={1000} bg={true}/>
+      </div>
+    );
+  }
+}
+
+
+

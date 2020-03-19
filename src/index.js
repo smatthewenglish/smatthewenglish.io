@@ -30,7 +30,17 @@ class Particle extends Component {
   }
 }
 
-render(<Particle />, document.getElementById('zip'));
+
+const rX = document.querySelector("#zip");
+if (rX) {
+  render(<Particle />, document.getElementById('zip'));
+}
+
+
+
+
+
+
 
 function Edu() {
   return (
@@ -65,6 +75,8 @@ const rootElement = document.querySelector("#root");
 //render(<App />, document.getElementById('root'));
 //if (rootElement) {
 
+  //meisterstück
+
 const history = createBrowserHistory()
 
   render(
@@ -72,15 +84,15 @@ const history = createBrowserHistory()
       <Grid container spacing={24}>
         
         <Grid item md={3}>
-          <App name="whoami" subject="autobiographic" desc={<Bio />} sub="personal introduction" history={history}/>
+          <App name="personal introduction" subject="whoami" desc={<Bio />} sub="autobiography" history={history}/>
         </Grid>
 
         <Grid item md={3}>
-          <App name="tschess" subject="meisterstück" desc={<Tsc />} sub="the american football of chess" history={history}/>
+          <App name="tschess • the american football of chess" subject="craftsmanship" desc={<Tsc />} sub="masterpiece pro tempore" history={history}/>
         </Grid>
 
         <Grid item md={3}>
-          <App name="credentials" subject="institutional" desc={<Edu />} sub="formal education" history={history}/>
+          <App name="formal education" subject="credentials" desc={<Edu />} sub="institutional" history={history}/>
         </Grid>
        
 
