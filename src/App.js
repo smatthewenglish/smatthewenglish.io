@@ -66,7 +66,8 @@ function SimpleCard(props) {
             
 
             // props.history.push(`/whoami`) 
-            ReactDOM.render(<WhoAmI />, document.getElementById('zed'));
+           
+            ReactDOM.render(props.whoami, document.getElementById('zed'));
 
 
             const rZ = document.querySelector("#zip-00");

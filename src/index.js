@@ -11,7 +11,8 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 
 import { useHistory } from 'react-router-dom';
-import { createBrowserHistory } from 'history'
+import { createBrowserHistory } from 'history';
+import WhoAmI from "./WhoAmI";
 
 class Particle extends Component {
   constructor() {
@@ -53,6 +54,15 @@ function Edu() {
   );
 }
 
+function Covid2020() {
+  return (
+    <div>
+      • iOS App<br/>
+      • Open Source
+    </div>
+  );
+}
+
 function Tsc() {
   return (
     <div>
@@ -84,16 +94,22 @@ const history = createBrowserHistory()
       <Grid container spacing={24}>
         
         <Grid item md={3}>
-          <App name="personal introduction" subject="whoami" desc={<Bio />} sub="autobiography" history={history}/>
+          <App name="personal introduction" subject="whoami" desc={<Bio />} sub="autobiography" history={history} whoami={<WhoAmI />}/>
         </Grid>
 
         <Grid item md={3}>
-          <App name="tschess • the american football of chess" subject="craftsmanship" desc={<Tsc />} sub="masterpiece pro tempore" history={history}/>
+          <App name="tschess • the american football of chess" subject="craftsmanship" desc={<Tsc />} sub="masterpiece pro tempore" history={history} whoami={<WhoAmI />}/>
+        </Grid>
+
+         <Grid item md={3}>
+          <App name="COVID-2020" subject="projects" desc={<Covid2020 />} sub="infographic of pandemic spread in usa" history={history} whoami={<WhoAmI />}/>
         </Grid>
 
         <Grid item md={3}>
-          <App name="formal education" subject="credentials" desc={<Edu />} sub="institutional" history={history}/>
+          <App name="formal education" subject="credentials" desc={<Edu />} sub="institutional" history={history} whoami={<WhoAmI />}/>
         </Grid>
+
+       
        
 
 
