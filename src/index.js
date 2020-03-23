@@ -13,6 +13,8 @@ import Grid from "@material-ui/core/Grid";
 import { useHistory } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import WhoAmI from "./WhoAmI";
+import WhoAm01 from "./WhoAm01";
+import WhoAm02 from "./WhoAm02";
 
 class Particle extends Component {
   constructor() {
@@ -94,7 +96,7 @@ const history = createBrowserHistory()
       <Grid container spacing={24}>
         
         <Grid item md={3}>
-          <App name="personal introduction" subject="whoami" desc={<Bio />} sub="autobiography" history={history} whoami={<WhoAmI />}/>
+          <App name="personal introduction" subject="whoami" desc={<Bio />} sub="autobiography" history={history} whoami={<WhoAm02 />}/>
         </Grid>
 
         <Grid item md={3}>
@@ -106,7 +108,7 @@ const history = createBrowserHistory()
         </Grid>
 
         <Grid item md={3}>
-          <App name="formal education" subject="credentials" desc={<Edu />} sub="institutional" history={history} whoami={<WhoAmI />}/>
+          <App name="formal education" subject="credentials" desc={<Edu />} sub="institutional" history={history} whoami={<WhoAm01 />}/>
         </Grid>
 
        
