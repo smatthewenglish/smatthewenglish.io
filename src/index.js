@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
 
 import { render } from "react-dom";
 import ParticlesBg from "particles-bg";
@@ -10,12 +10,12 @@ import ParticlesBg from "particles-bg";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 
-import { useHistory } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
-import WhoAmI from "./WhoAmI";
-import WhoAm01 from "./WhoAm01";
-import WhoAm02 from "./WhoAm02";
-import WhoAm03 from "./WhoAm03";
+import { useHistory } from "react-router-dom";
+import { createBrowserHistory } from "history";
+import MenuWho from "./MenuWho";
+import MenuEdu from "./MenuEdu";
+import MenuTsc from "./MenuTsc";
+import MenuCov from "./MenuCov";
 
 class Particle extends Component {
   constructor() {
@@ -28,31 +28,26 @@ class Particle extends Component {
   render() {
     return (
       <div>
-        <ParticlesBg type="lines" num={1000} bg={true}/>
+        <ParticlesBg type="lines" num={1000} bg={true} />
       </div>
     );
   }
 }
 
-
 const rX = document.querySelector("#zip");
 if (rX) {
-  render(<Particle />, document.getElementById('zip'));
+  render(<Particle />, document.getElementById("zip"));
 }
-
-
-
-
-
-
 
 function Edu() {
   return (
     <div>
-      • Rheinische Friedrich-Wilhelms-Universität Bonn<br/>
-      • The University of Hong Kong (香港大學)<br/>
-      • 汉语水平考试 (Hanyu Shuiping Kaoshi)<br/>
-      • New York University (NYU)
+      • Rheinische Friedrich-Wilhelms-Universität Bonn
+      <br />
+      • The University of Hong Kong (香港大學)
+      <br />
+      • 汉语水平考试 (Hanyu Shuiping Kaoshi)
+      <br />• New York University (NYU)
     </div>
   );
 }
@@ -60,8 +55,8 @@ function Edu() {
 function Covid2020() {
   return (
     <div>
-      • iOS App<br/>
-      • Open Source
+      • iOS App
+      <br />• Open Source
     </div>
   );
 }
@@ -69,8 +64,8 @@ function Covid2020() {
 function Tsc() {
   return (
     <div>
-      • iOS App<br/>
-      • Open Source
+      • iOS App
+      <br />• Open Source
     </div>
   );
 }
@@ -78,8 +73,10 @@ function Tsc() {
 function Bio() {
   return (
     <div>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat...
     </div>
   );
 }
@@ -88,39 +85,60 @@ const rootElement = document.querySelector("#root");
 //render(<App />, document.getElementById('root'));
 //if (rootElement) {
 
-  //meisterstück
+//meisterstück
 
-const history = createBrowserHistory()
+const history = createBrowserHistory();
 
-  render(
-    <div>
-      <Grid container spacing={24}>
-        
-        <Grid item md={3}>
-          <App name="personal introduction" subject="whoami" desc={<Bio />} sub="autobiography" history={history} whoami={<WhoAm02 />}/>
-        </Grid>
-
-        <Grid item md={3}>
-          <App name="tschess • the american football of chess" subject="craftsmanship" desc={<Tsc />} sub="masterpiece pro tempore" history={history} whoami={<WhoAm03 />}/>
-        </Grid>
-
-         <Grid item md={3}>
-          <App name="COVID-2020" subject="project" desc={<Covid2020 />} sub="united states infographic" history={history} whoami={<WhoAmI />}/>
-        </Grid>
-
-        <Grid item md={3}>
-          <App name="formal education" subject="credentials" desc={<Edu />} sub="institutional" history={history} whoami={<WhoAm01 />}/>
-        </Grid>
-
-       
-       
-
-
-
+render(
+  <div>
+    <Grid container spacing={24}>
+      <Grid item md={3}>
+        <App
+          name="personal introduction"
+          subject="whoami"
+          desc={<Bio />}
+          sub="autobiography"
+          history={history}
+          whoami={<MenuWho />}
+        />
       </Grid>
-    </div>,
-    rootElement
-  );
+
+      <Grid item md={3}>
+        <App
+          name="tschess • the american football of chess"
+          subject="craftsmanship"
+          desc={<Tsc />}
+          sub="masterpiece pro tempore"
+          history={history}
+          whoami={<MenuTsc />}
+        />
+      </Grid>
+
+      <Grid item md={3}>
+        <App
+          name="COVID-2020"
+          subject="project"
+          desc={<Covid2020 />}
+          sub="united states infographic"
+          history={history}
+          whoami={<MenuCov />}
+        />
+      </Grid>
+
+      <Grid item md={3}>
+        <App
+          name="formal education"
+          subject="credentials"
+          desc={<Edu />}
+          sub="institutional"
+          history={history}
+          whoami={<MenuEdu />}
+        />
+      </Grid>
+    </Grid>
+  </div>,
+  rootElement
+);
 //}
 
 // If you want your app to work offline and load faster, you can change

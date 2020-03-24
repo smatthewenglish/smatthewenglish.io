@@ -1,7 +1,7 @@
 import React from 'react';
 
  
-const WhoAm03 = () => {
+const MenuTsc = () => {
     return (
      
     <div class="lolol">
@@ -39,7 +39,7 @@ const WhoAm03 = () => {
     );
 }
  
-export default WhoAm03;
+export default MenuTsc;
 
 // <img class="sme-00" src="./masterpiece.svg"/>
 // <img class="sme-00" src="./masterpiece.gif"/>

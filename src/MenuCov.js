@@ -1,14 +1,14 @@
 import React from 'react';
 
  
-const WhoAm01 = () => {
+const MenuCov = () => {
     return (
      
     <div class="row header">
 
       <div id="zip-00"></div>
       
-      <img class="sme-00" src="./credentials.gif"/>
+      <img class="sme-00" src="./covid_2020.svg"/>
       
 
     </div>
@@ -16,7 +16,7 @@ const WhoAm01 = () => {
     );
 }
  
-export default WhoAm01;
+export default MenuCov;
 
 // <img class="sme-00" src="./masterpiece.svg"/>
 // <img class="sme-00" src="./masterpiece.gif"/>

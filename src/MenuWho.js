@@ -1,12 +1,15 @@
 import React from 'react';
 
+ import ParticlesBg from "particles-bg";
  
-const WhoAm02 = () => {
+const MenuWho = () => {
     return (
      
     <div class="row header">
 
-      <div id="zip-00"></div>
+      <div id="zip-00">
+        <ParticlesBg type="circle" num={1000} bg={true} />
+      </div>
       
       <img class="sme-00" src="./whoami.gif"/>
       
@@ -16,7 +19,7 @@ const WhoAm02 = () => {
     );
 }
  
-export default WhoAm02;
+export default MenuWho;
 
 // <img class="sme-00" src="./masterpiece.svg"/>
 // <img class="sme-00" src="./masterpiece.gif"/>
