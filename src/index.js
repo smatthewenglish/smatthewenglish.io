@@ -15,6 +15,7 @@ import { createBrowserHistory } from 'history';
 import WhoAmI from "./WhoAmI";
 import WhoAm01 from "./WhoAm01";
 import WhoAm02 from "./WhoAm02";
+import WhoAm03 from "./WhoAm03";
 
 class Particle extends Component {
   constructor() {
@@ -100,11 +101,11 @@ const history = createBrowserHistory()
         </Grid>
 
         <Grid item md={3}>
-          <App name="tschess • the american football of chess" subject="craftsmanship" desc={<Tsc />} sub="masterpiece pro tempore" history={history} whoami={<WhoAmI />}/>
+          <App name="tschess • the american football of chess" subject="craftsmanship" desc={<Tsc />} sub="masterpiece pro tempore" history={history} whoami={<WhoAm03 />}/>
         </Grid>
 
          <Grid item md={3}>
-          <App name="COVID-2020" subject="projects" desc={<Covid2020 />} sub="infographic of pandemic spread in usa" history={history} whoami={<WhoAmI />}/>
+          <App name="COVID-2020" subject="project" desc={<Covid2020 />} sub="united states infographic" history={history} whoami={<WhoAmI />}/>
         </Grid>
 
         <Grid item md={3}>
