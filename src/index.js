@@ -37,6 +37,7 @@ class Particle extends Component {
 
     //alert("sup?");
     window.location.reload();
+    createBrowserHistory().push('/');
 
   }
 }
