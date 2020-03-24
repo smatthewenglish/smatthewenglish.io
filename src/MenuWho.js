@@ -1,11 +1,11 @@
 import React from 'react';
 
  import ParticlesBg from "particles-bg";
- 
+
 const MenuWho = () => {
     return (
      
-    <div class="row header">
+    <div class="row header" id="zed">
 
       <div id="zip-00">
         <ParticlesBg type="circle" num={1000} bg={true} />

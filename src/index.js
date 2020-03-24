@@ -17,6 +17,9 @@ import MenuEdu from "./MenuEdu";
 import MenuTsc from "./MenuTsc";
 import MenuCov from "./MenuCov";
 
+import {Link } from "react-router-dom";
+import { Redirect } from 'react-router-dom';
+
 class Particle extends Component {
   constructor() {
     super();
@@ -24,6 +27,19 @@ class Particle extends Component {
       name: "React"
     };
   }
+
+  // componentDidMount() {
+  //   window.addEventListener("popstate", );
+  // }
+
+  componentDidMount() {
+  window.onpopstate = () => { 
+
+    //alert("sup?");
+    window.location.reload();
+
+  }
+}
 
   render() {
     return (
@@ -78,6 +94,8 @@ function Bio() {
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat...
     </div>
+
+     
   );
 }
 
@@ -86,6 +104,10 @@ const rootElement = document.querySelector("#root");
 //if (rootElement) {
 
 //meisterstück
+
+
+
+
 
 const history = createBrowserHistory();
 

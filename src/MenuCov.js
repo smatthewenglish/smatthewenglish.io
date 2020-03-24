@@ -4,7 +4,7 @@ import React from 'react';
 const MenuCov = () => {
     return (
      
-    <div class="row header">
+    <div class="row header"  id="zed">
 
       <div id="zip-00"></div>
       

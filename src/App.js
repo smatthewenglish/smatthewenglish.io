@@ -11,8 +11,9 @@ import ParticlesBg from "particles-bg";
 
 import MenuCov from "./MenuCov";
 import ReactDOM from "react-dom";
-// import {withRouter} from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { BrowserRouter, Route } from "react-router-dom";
+import { Redirect } from 'react-router-dom';
 
 const styles = {
   card: {
@@ -47,12 +48,9 @@ function SimpleCard(props) {
           className={props.classes.cardAction}
           onClick={event => {
 
+            props.history.push('/dashboard')
             ReactDOM.render(props.whoami, document.getElementById("zed"));
 
-            //const rZ = document.querySelector("#zip-00");
-            //if (rZ) {
-              //ReactDOM.render(<PMrrr />, document.getElementById("zip-00"));
-            //}
           }}
         >
           <CardContent>
@@ -79,19 +77,6 @@ SimpleCard.propTypes = {
 
 export default withStyles(styles)(SimpleCard);
 
-class PMrrr extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: "React"
-    };
-  }
 
-  render() {
-    return (
-      <div>
-        <ParticlesBg type="circle" num={1000} bg={true} />
-      </div>
-    );
-  }
-}
+
+
