@@ -49,7 +49,7 @@ function SimpleCard(props) {
           onClick={event => {
 
             props.history.push('/dashboard')
-            ReactDOM.render(props.whoami, document.getElementById("zed"));
+            ReactDOM.render(props.whoami, document.getElementById("hook"));
 
           }}
         >
