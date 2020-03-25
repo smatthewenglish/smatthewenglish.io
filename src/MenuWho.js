@@ -1,6 +1,7 @@
 import React from 'react';
 
  import ParticlesBg from "particles-bg";
+ import './MenuWho.css';
 
 const MenuWho = () => {
     return (
