@@ -51,6 +51,13 @@ function SimpleCard(props) {
             props.history.push('/dashboard')
             ReactDOM.render(props.whoami, document.getElementById("hook"));
 
+
+
+
+
+
+
+
           }}
         >
           <CardContent>
