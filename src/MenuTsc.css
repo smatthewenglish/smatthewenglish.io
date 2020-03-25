@@ -1,4 +1,105 @@
 
+.box .row.content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+
+    overflow:scroll;
+    
+    background: white;
+    z-index: 999;
+  
+}
+
+
+
+.footer-social-icons {
+
+   /* border: 1px solid yellow;*/
+
+    width: fit-content;
+    padding-top: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+* {  
+  font-family: Roboto, sans-serif;  
+
+
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.social-icon {
+
+   /* border: 1px dashed magenta;*/
+
+   /* width: fit-content;*/
+
+    color: #fff;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+.social-icons a {
+
+    color: #fff;
+    text-decoration: none;
+}
+
+.box .row.footer {
+
+   /* border: 5px dashed green;*/
+
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: fit-content;
+
+    background: black;
+
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box .row {
+  border: 1px dotted grey;
+}
+
+
+.box .row.header {
+  /*border: 3px solid red;*/
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+
+  width: 100%;
+  height: 20%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: black;
+}
+
+
 .lolol {
   position: absolute;
   width: 100%;
@@ -59,9 +160,9 @@
 
 .x1 {
 /*  border: 3px solid yellow;*/
-  -webkit-animation: animateCloud 35s linear infinite;
-  -moz-animation: animateCloud 35s linear infinite;
-  animation: animateCloud 35s linear infinite;
+  -webkit-animation: animateCloud 55s linear infinite;
+  -moz-animation: animateCloud 55s linear infinite;
+  animation: animateCloud 55s linear infinite;
 
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
@@ -76,9 +177,9 @@
   padding-left: 115%;
   /*margin-right: -1500px;*/
 
-  -webkit-animation: animateCloud 25s linear infinite;
-  -moz-animation: animateCloud 25s linear infinite;
-  animation: animateCloud 25s linear infinite;
+  -webkit-animation: animateCloud 65s linear infinite;
+  -moz-animation: animateCloud 65s linear infinite;
+  animation: animateCloud 65s linear infinite;
 
   -webkit-transform: scale(0.95);
   -moz-transform: scale(0.95);
@@ -91,9 +192,9 @@
 /*  border: 5px dotted orange;*/
   padding-left: 185%;
 
-  -webkit-animation: animateCloud 30s linear infinite;
-  -moz-animation: animateCloud 30s linear infinite;
-  animation: animateCloud 30s linear infinite;
+  -webkit-animation: animateCloud 48s linear infinite;
+  -moz-animation: animateCloud 48s linear infinite;
+  animation: animateCloud 48s linear infinite;
 
   -webkit-transform: scale(0.58);
   -moz-transform: scale(0.58);
@@ -106,9 +207,9 @@
   margin-top: -85px;
   padding-left: -150%;
 
-  -webkit-animation: animateCloud 27s linear infinite;
-  -moz-animation: animateCloud 27s linear infinite;
-  animation: animateCloud 27s linear infinite;
+  -webkit-animation: animateCloud 37s linear infinite;
+  -moz-animation: animateCloud 37s linear infinite;
+  animation: animateCloud 37s linear infinite;
 
   -webkit-transform: scale(0.74);
   -moz-transform: scale(0.74);
@@ -210,7 +311,7 @@
   #background-wrap {
     position: absolute;
     width: 100%;
-    height: 20%;
+    height: 30%;
     /*  bottom: 0;*/
     left: 0;
     top: 0;
@@ -298,4 +399,133 @@
     -moz-transform: scale(0.35);
     transform: scale(0.35);
   }
+
+  .fa {
+    padding:3px;
+    text-align:center;
+    font-size: 18px;   
+}
+
+.ai {
+    padding:3px;
+    text-align:center;
+    font-size: 18px;   
+}
+
+  .footer-social-icons {
+    width: 100%;
+
+    margin-top: 8px;
+    padding-bottom: 11px;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+.fa-instagram {
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+.fa-twitter {
+
+
+    /*padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-youtube {
+    /*padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+.fa-github {
+/*    padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-apple {
+   /* padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-stack-overflow {
+   /* padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.ai-google-scholar-square {
+   /* padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-soundcloud {
+    /*padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-envelope {
+   /* padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-spotify {
+   /* padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-reddit {
+  /*  padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-medium {
+   /* padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-meetup {
+  /*  padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+}
+
+
+.fa-telegram {
+   /* padding:8px 10px;*/
+    background-color: #322f30;
+    border-radius: 2px;
+
+
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    /*     display: flex;
+  align-items: center;
+  justify-content: center;*/
+}
 }
