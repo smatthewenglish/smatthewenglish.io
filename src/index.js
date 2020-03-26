@@ -12,10 +12,10 @@ import Grid from "@material-ui/core/Grid";
 
 import { useHistory } from "react-router-dom";
 import { createBrowserHistory } from "history";
-import MenuWho from "./MenuWho";
-import MenuEdu from "./MenuEdu";
-import MenuTsc from "./MenuTsc";
-import MenuCov from "./MenuCov";
+import MenuWho from "./whoami/MenuWho";
+import MenuEdu from "./credentials/MenuEdu";
+import MenuTsc from "./craftsmanship/MenuTsc";
+import MenuCov from "./project/MenuCov";
 
 import {Link } from "react-router-dom";
 import { Redirect } from 'react-router-dom';
@@ -114,7 +114,14 @@ const history = createBrowserHistory();
 
 render(
   <div>
-    <Grid container spacing={24}>
+    <Grid 
+
+    container 
+    spacing={24}
+alignItems="stretch"
+
+
+    >
       <Grid item md={3}>
         <App
           name="personal introduction"
@@ -128,7 +135,7 @@ render(
 
       <Grid item md={3}>
         <App
-          name="tschess • the american football of chess"
+          name="the american football of chess"
           subject="craftsmanship"
           desc={<Tsc />}
           sub="masterpiece pro tempore"

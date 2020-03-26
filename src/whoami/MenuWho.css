@@ -1,0 +1,25 @@
+
+
+
+@media only screen and (max-width: 768px) {
+    
+
+/* border: 1px dashed magenta;*/
+
+/*.sme-00 {
+ 
+  top:1.2%;
+  width:94%;
+   text-align:center;
+}*/
+
+
+
+.sme-00 {
+
+ /* border: 1px solid red;*/
+  width: 80%;
+  height: auto;
+  margin-top: 1%;
+  }
+}
