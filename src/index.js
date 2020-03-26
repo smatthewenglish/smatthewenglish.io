@@ -51,9 +51,9 @@ class Particle extends Component {
   }
 }
 
-const rX = document.querySelector("#zip");
+const rX = document.querySelector("#landing_background");
 if (rX) {
-  render(<Particle />, document.getElementById("zip"));
+  render(<Particle />, document.getElementById("landing_background"));
 }
 
 function Edu() {
@@ -100,7 +100,7 @@ function Bio() {
   );
 }
 
-const rootElement = document.querySelector("#root");
+const rootElement = document.querySelector("#cards");
 //render(<App />, document.getElementById('root'));
 //if (rootElement) {
 
@@ -112,63 +112,67 @@ const rootElement = document.querySelector("#root");
 
 const history = createBrowserHistory();
 
-render(
-  <div>
-    <Grid 
+// render(
+//   <div>
+//     <Grid 
 
-    container 
-    spacing={24}
-alignItems="stretch"
+// class="cards"
+//     container 
+//     spacing={24}>
+//       <Grid item md={3}>
+//         <App
+//         class="card"
+//           name="personal introduction"
+//           subject="whoami"
+//           desc={<Bio />}
+//           sub="autobiography"
+//           history={history}
+//           whoami={<MenuWho />}
+//         />
+//       </Grid>
+
+//       <Grid item md={3}>
+//         <App
+//         class="card"
+//           name="the american football of chess"
+//           subject="craftsmanship"
+//           desc={<Tsc />}
+//           sub="masterpiece pro tempore"
+//           history={history}
+//           whoami={<MenuTsc />}
+//         />
+//       </Grid>
+
+//       <Grid item md={3}>
+//         <App
+//         class="card"
+//           name="COVID-2020"
+//           subject="project"
+//           desc={<Covid2020 />}
+//           sub="united states infographic"
+//           history={history}
+//           whoami={<MenuCov />}
+//         />
+//       </Grid>
+
+//       <Grid item md={3}>
+//         <App
+//         class="card"
+//           name="formal education"
+//           subject="credentials"
+//           desc={<Edu />}
+//           sub="institutional"
+//           history={history}
+//           whoami={<MenuEdu />}
+//         />
+//       </Grid>
+//     </Grid>
+//   </div>,
+//   rootElement
+// );
 
 
-    >
-      <Grid item md={3}>
-        <App
-          name="personal introduction"
-          subject="whoami"
-          desc={<Bio />}
-          sub="autobiography"
-          history={history}
-          whoami={<MenuWho />}
-        />
-      </Grid>
 
-      <Grid item md={3}>
-        <App
-          name="the american football of chess"
-          subject="craftsmanship"
-          desc={<Tsc />}
-          sub="masterpiece pro tempore"
-          history={history}
-          whoami={<MenuTsc />}
-        />
-      </Grid>
-
-      <Grid item md={3}>
-        <App
-          name="COVID-2020"
-          subject="project"
-          desc={<Covid2020 />}
-          sub="united states infographic"
-          history={history}
-          whoami={<MenuCov />}
-        />
-      </Grid>
-
-      <Grid item md={3}>
-        <App
-          name="formal education"
-          subject="credentials"
-          desc={<Edu />}
-          sub="institutional"
-          history={history}
-          whoami={<MenuEdu />}
-        />
-      </Grid>
-    </Grid>
-  </div>,
-  rootElement
-);
 //}
 
 // If you want your app to work offline and load faster, you can change
