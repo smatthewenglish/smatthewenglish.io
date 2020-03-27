@@ -57,9 +57,6 @@ function SimpleCard(props) {
 
 
 
-
-
-
           }}
         >
           <CardContent>
