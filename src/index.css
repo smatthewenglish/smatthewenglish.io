@@ -252,7 +252,7 @@ p {
     border-radius: 4px;
 }
 .fa-apple:hover {
-    background-color: #007AFF;
+    background-color: #7D7D7D;
 }
 
 .fa-stack-overflow {
@@ -375,6 +375,10 @@ p {
 
 
 @media only screen and (max-width: 768px) {
+  .sme {
+width:100%;
+}
+
       .card {
         max-width: 100%;
     }
