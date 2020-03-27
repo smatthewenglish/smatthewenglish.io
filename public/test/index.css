@@ -1,4 +1,4 @@
-
+/*
 * { 
   font-family: Roboto, sans-serif;  
 	overflow: hidden;
@@ -39,21 +39,20 @@ html, body {
 .tooltip_value {
   margin-left: 20px;
   float: right;
-}
+}*/
 
 /*.united_states {
 } */
 
-#map_usa {
-  /*padding-right: 200px;*/
+/*#map_usa {
+  
   width: auto;
   height: 100%;
-/*  align-self: center;*/
-/*  border: 5px dotted magenta;*/
 
-}
 
-.box .row.content {
+}*/
+
+/*.box .row.content {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: auto;
@@ -66,27 +65,27 @@ html, body {
   align-items: center;
   justify-content: center;
 
-/*  border: 5px solid blue;*/
-}
 
-.box {
+}*/
+
+/*.box {
   display: flex;
   flex-flow: column;
   height: 100%;
-}
+}*/
 
-.box .row {
-  /*border: 1px dotted grey;*/
-}
+/*.box .row {
+
+}*/
 
 
-.tip_header {
+/*.tip_header {
     display: flex;
     justify-content: space-between;
-}
+}*/
 
-.box .row.header {
-  /*border: 3px solid red;*/
+/*.box .row.header {
+ 
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: auto;
@@ -98,12 +97,12 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+}*/
 
 
 
-.box .row.footer {
-	/* border: 5px dashed green;*/
+/*.box .row.footer {
+
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: fit-content;
@@ -119,26 +118,25 @@ html, body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
+}*/
 
-.title {
-  /* border: 1px solid yellow;*/
+/*.title {
+ 
   margin-top: 25px;
 	position: fixed;
-}
+}*/
 
-.footer_member {
-  /* border: 1px solid yellow;*/
+/*.footer_member {
+
   width: fit-content;
-/*  margin-top: 8px;
-  margin-bottom: 8px;*/
+
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
+}*/
 
-.footer_box {
+/*.footer_box {
   margin-top: 4px;
   margin-bottom: 4px;
   margin-right: 2px;
@@ -155,11 +153,10 @@ html, body {
   padding:5px;
   background-color: #322f30;
   border-radius: 4px;
-}
+}*/
 
-@media only screen and (max-width: 899px) { 
+/*@media only screen and (max-width: 899px) { 
   .title {
-    /*border: 1px solid yellow;*/
     max-height: 12%;
     top: 0px;
   }
@@ -181,15 +178,14 @@ html, body {
   }
 
   #map_usa {
-  /*padding-right: 200px;*/
+
   width: 100%;
   height: auto;
-/*  align-self: center;*/
-/*  border: 5px dotted magenta;*/
+
 
 }
 
-}
+}*/
 
 
 

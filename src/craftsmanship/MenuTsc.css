@@ -1,5 +1,5 @@
 
-.box .row.content {
+/*.box .row.content {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
@@ -9,22 +9,22 @@
     background: white;
     z-index: 999;
   
-}
+}*/
 
+ /* border: 1px solid yellow;*/
 
+/*.footer-social-icons {
 
-.footer-social-icons {
-
-   /* border: 1px solid yellow;*/
+  
 
     width: fit-content;
     padding-top: 6px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+}*/
 
-
+/*
 * {  
   font-family: Roboto, sans-serif;  
 
@@ -40,13 +40,15 @@ html, body {
   display: flex;
   flex-flow: column;
   height: 100%;
-}
+}*/
 
-.social-icon {
-
-   /* border: 1px dashed magenta;*/
+/* border: 1px dashed magenta;*/
 
    /* width: fit-content;*/
+
+/*.social-icon {
+
+   
 
     color: #fff;
     margin-left: 2.5px;
@@ -56,11 +58,16 @@ html, body {
 
     color: #fff;
     text-decoration: none;
-}
+}*/
 
+
+  /* border: 5px dashed green;*/
+
+
+/*  
 .box .row.footer {
 
-   /* border: 5px dashed green;*/
+ 
 
     flex-grow: 0;
     flex-shrink: 1;
@@ -74,16 +81,16 @@ html, body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
+}*/
 
 
-.box .row {
+/*.box .row {
   border: 1px dotted grey;
-}
+}*/
 
-
-.box .row.header {
-  /*border: 3px solid red;*/
+ /*border: 3px solid red;*/
+/*.box .row.header {
+ 
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: auto;
@@ -97,10 +104,10 @@ html, body {
   justify-content: center;
 
   background: black;
-}
+}*/
 
 
-.lolol {
+/*.lolol {
   position: absolute;
   width: 100%;
   height: 20%;
@@ -110,26 +117,29 @@ html, body {
 
   overflow-x: hidden;
   overflow-y: hidden;
-}
+}*/
 
-.craftsmanship {
-  /*  border: 3px solid red;*/
+/*  border: 3px solid red;*/
+
+/*.craftsmanship {
+  
   position: absolute;
   top: 2.5%;
   left: 25%;
-}
+}*/
 
-#background-wrap {
+/*#background-wrap {
   position: absolute;
   left: 0;
   padding-top: 10px;
   right: 0;
+
+}*/
   /* top: -5px;*/
-}
 
 /* KEYFRAMES */
 
-@-webkit-keyframes animateCloud {
+/*@-webkit-keyframes animateCloud {
   0% {
     margin-left: -75%;
   }
@@ -154,7 +164,7 @@ html, body {
   100% {
     margin-left: 100%;
   }
-}
+}*/
 
 /* ANIMATIONS */
 
@@ -293,7 +303,7 @@ html, body {
 }
 
 @media only screen and (max-width: 768px) {
-  .lolol {
+/*  .lolol {
     position: absolute;
     width: 100%;
     height: 20%;
@@ -301,33 +311,33 @@ html, body {
     background: #00b4ff;
     color: #333;
     font: 100% Arial, Sans Serif;
-    /* height: 100vh;*/
+
     margin: 0;
     padding: 0;
     
     overflow-x: hidden;
-  }
+  }*/
 
-  #background-wrap {
+ /* #background-wrap {
     position: absolute;
     width: 100%;
     height: 30%;
-    /*  bottom: 0;*/
+
     left: 0;
     top: 0;
-    /* position: fixed;*/
+  
     right: 0;
     top: -10px;
-    /* z-index: -1;*/
-  }
+  
+  }*/
 
-  .craftsmanship {
+/*  .craftsmanship {
     position: absolute;
     top: 140%;
     left: 10%;
     right: 10%;
     width: 80%;
-  }
+  }*/
 
   .x1 {
     /*border: 3px solid yellow;*/
@@ -513,19 +523,17 @@ html, body {
 }
 
 
-.fa-telegram {
-   /* padding:8px 10px;*/
+/*.fa-telegram {
+   
     background-color: #322f30;
     border-radius: 2px;
 
 
 }
-
-.social-icons a {
+*/
+/*.social-icons a {
     color: #fff;
     text-decoration: none;
-    /*     display: flex;
-  align-items: center;
-  justify-content: center;*/
-}
+   
+}*/
 }
