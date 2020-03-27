@@ -2,6 +2,12 @@
  * SME  
  */
 
+ html, body {
+  margin: 0;
+  height: 100%;
+  position: fixed;
+}
+
 * {  
   font-family: Roboto, sans-serif; 
   letter-spacing: 2px;
@@ -19,15 +25,22 @@ p {
 }
 
 .card_image {
-  display: block;
   border: 0;
-  width: 100%;
   height: auto;
+  display: block;
+  max-width: 100%;
+  width: 100%;
 }
 
 .card {
+
+  
+
   background: white;
   margin-bottom: 2em; 
+  max-width: 100%;
+  border: 3px dotted magenta;
+  z-index: 99999;
 }
 
 .card a {
@@ -40,7 +53,7 @@ p {
 }
 
 .card-content {
-  padding: 1.4em;
+ /* padding: 1.4em;*/
 }
 
 .card-content h2 {
@@ -56,8 +69,14 @@ p {
 /* Flexbox stuff */
 
 .cards {
+  overflow: hidden;
     display: flex;
     flex-wrap: wrap;
+
+   /* display: flex;*/
+  flex-direction: row;
+  justify-content: space-between;
+
  }
 
 .card {
@@ -66,10 +85,7 @@ p {
     margin: 1rem .25em;
 }
 
-html, body {
-	margin: 0;
-  height: 100%;
-}
+
 
 .box {
   display: flex;
@@ -90,10 +106,13 @@ html, body {
     flex-shrink: 1;
     flex-basis: auto;
 
-    overflow:scroll;
+    overflow: scroll;
     
     background: white;
-    z-index: 999;
+  /*  z-index: 999;*/
+
+    max-width: 100%;
+    border: 3px solid green;
   
 }
 
@@ -101,7 +120,7 @@ html, body {
     border: 1px solid magenta;
     top:0;
   /*align-items: stretch;*/
-/*  opacity: 0.7;*/
+  opacity: 0.8;
   width: 100%;
   height: 20%;
   /*height: 20%;*/
@@ -110,19 +129,19 @@ html, body {
   background-position: 50% 50%;
   background-repeat: no-repeat;
 /*  z-index: -1;*/
- z-index: 99;
- background: orange;
+/* z-index: 99;*/
+ background: black;
 }
 
 .sme {
   border: 1px solid red;
   position: fixed;
   max-width: 100%;
-  z-index: 999;
+ /* z-index: 999;*/
 }
 
 .box .row.header {
-/* z-index: -999;*/
+ /*z-index: -999;*/
   /*border: 3px solid red;*/
   flex-grow: 0;
   flex-shrink: 0;
@@ -322,177 +341,7 @@ html, body {
 
 
 
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 768px) {
-    
-  .sme {
-    width:100%;
-  }
-/* border: 1px dashed magenta;*/
-
-/*.sme-00 {
- 
-  top:1.2%;
-  width:94%;
-   text-align:center;
-}*/
-
-
-
-.sme-00 {
-
- /* border: 1px solid red;*/
-  width: 140%;
-  margin-top: 1%;
-  }
-
-
-.fa {
-    padding:3px;
-    text-align:center;
-    font-size: 18px;   
-}
-
-.ai {
-    padding:3px;
-    text-align:center;
-    font-size: 18px;   
-}
-
-  .footer-social-icons {
-    width: 100%;
-
-    margin-top: 8px;
-    padding-bottom: 11px;
-  
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-.fa-instagram {
-    background-color: #322f30;
-    border-radius: 2px;
-}
-
-.fa-twitter {
-
-
-    /*padding:8px 10px;*/
-    background-color: #322f30;
-    border-radius: 2px;
-}
-
-
-.fa-youtube {
-    /*padding:8px 10px;*/
-    background-color: #322f30;
-    border-radius: 2px;
-}
-
-.fa-github {
-/*    padding:8px 10px;*/
-    background-color: #322f30;
-    border-radius: 2px;
-}
-
-
-.fa-apple {
-   /* padding:8px 10px;*/
-    background-color: #322f30;
-    border-radius: 2px;
-}
-
-
-.fa-stack-overflow {
-   /* padding:8px 10px;*/
-    background-color: #322f30;
-    border-radius: 2px;
-}
-
-
-.ai-google-scholar-square {
-   /* padding:8px 10px;*/
-    background-color: #322f30;
-    border-radius: 2px;
-}
-
-
-.fa-soundcloud {
-    /*padding:8px 10px;*/
-    background-color: #322f30;
-    border-radius: 2px;
-}
-
-
-.fa-envelope {
-   /* padding:8px 10px;*/
-    background-color: #322f30;
-    border-radius: 2px;
-}
-
-
-.fa-spotify {
-   /* padding:8px 10px;*/
-    background-color: #322f30;
-    border-radius: 2px;
-}
-
-
-.fa-reddit {
-  /*  padding:8px 10px;*/
-    background-color: #322f30;
-    border-radius: 2px;
-}
-
-
-.fa-medium {
-   /* padding:8px 10px;*/
-    background-color: #322f30;
-    border-radius: 2px;
-}
-
-
-.fa-meetup {
-  /*  padding:8px 10px;*/
-    background-color: #322f30;
-    border-radius: 2px;
-}
-
-
-.fa-telegram {
-   /* padding:8px 10px;*/
-    background-color: #322f30;
-    border-radius: 2px;
-
-
-}
-
-.social-icons a {
-    color: #fff;
-    text-decoration: none;
-    /*     display: flex;
-  align-items: center;
-  justify-content: center;*/
-}
-
-
-
-
-}
-
-
-
-
-
+/*width: 100%;*/
 
 @media screen and (min-width: 40em) {
     .card {
@@ -500,17 +349,47 @@ html, body {
     }
 }
 
+@media screen and (min-width: 52em) {
+/*    .centered {
+        max-width: 52em;  
+    }*/
+}
+
 @media screen and (min-width: 60em) {
     .card {
         max-width: calc(25% - 1em);
+        /*width: 100%;*/
+        /*max-width: 100%;*/
     }
 }
 
-@media screen and (min-width: 52em) {
-    .centered {
-        max-width: 52em;
+
+
+.centered {
+  border: 2px dashed blue;
+    margin: 0 auto;
+    padding: 0 1em;
+    max-width: 100%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+      .card {
+        max-width: 100%;
+    }
+    .cards {
+ overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+
+   /* display: flex;*/
+  flex-direction: column;
+  justify-content: space-between;
     }
 }
+
+
 
 
 
