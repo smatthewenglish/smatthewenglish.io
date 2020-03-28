@@ -17,13 +17,23 @@ body {
 }
 
 h2 {
-  font-size: 1rem;
-  color: #007489;
+  font-size: 1.5rem;
+/*  color: #322f30;*/
+color: white;
+/*  text-shadow: 0.5px 0.5px 1px #f0f;*/
+  text-shadow: 1px 1px 2px black, 0 0 25px #0f0, 0 0 5px black;
+}
+
+.more {
+
+  font-weight: bold;
+  color: #f0f;
+  text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 p {
   margin-bottom: 1.5em;
-  color: #898989;
+  color: black;
 }
 
 .card_image {
@@ -131,6 +141,7 @@ p {
 .sme {
   position: fixed;
   max-width: 100%;
+   max-height: 20%;
 }
 
 .box .row.header {
