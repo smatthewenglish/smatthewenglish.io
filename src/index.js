@@ -56,6 +56,11 @@ if (rX) {
   render(<Particle />, document.getElementById("landing_background"));
 }
 
+const rY = document.querySelector("#zip-00");
+if (rY) {
+  render(<Particle />, document.getElementById("zip-00"));
+}
+
 function Edu() {
   return (
     <div>
