@@ -46,6 +46,116 @@
       </div><!-- 1:HEADER --> 
     
       <div class="row content"><!-- 0:CONTENT -->
+
+        <div class="section_a">
+          <div class="section_a0"></div>
+          <div class="section_a1"></div>
+        </div>
+        
+
+        <div class="section_b">
+          
+<table class="chess_table">
+      <tr>
+   
+        <td id="A8" class="BP">&#9820;</td>
+        <td id="B8" class="BP">&#9822;</td>
+        <td id="C8" class="BP">&#9821;</td>
+        <td id="D8" class="BP">&#9819;</td>
+        <td id="E8" class="BP">&#9818;</td>
+        <td id="F8" class="BP">&#9821;</td>
+        <td id="G8" class="BP">&#9822;</td>
+        <td id="H8" class="BP">&#9820;</td>
+    
+      </tr>
+       <tr>
+    
+        <td id="A7" class="BP">&#9823;</td>
+        <td id="B7" class="BP">&#9823;</td>
+        <td id="C7" class="BP">&#9823;</td>
+        <td id="D7" class="BP">&#9823;</td>
+        <td id="E7" class="BP">&#9823;</td>
+        <td id="F7" class="BP">&#9823;</td>
+        <td id="G7" class="BP">&#9823;</td>
+        <td id="H7" class="BP">&#9823;</td>
+     
+    </tr>
+       <tr>
+   
+        <td id="A6"></td>
+        <td id="B6"></td>
+        <td id="C6"></td>
+        <td id="D6"></td>
+        <td id="E6"></td>
+        <td id="F6"></td>
+        <td id="G6"></td>
+        <td id="H6"></td>
+  
+    </tr>
+      <tr>
+ 
+        <td id="A5"></td>
+        <td id="B5"></td>
+        <td id="C5"></td>
+        <td id="D5"></td>
+        <td id="E5"></td>
+        <td id="F5"></td>
+        <td id="G5"></td>
+        <td id="H5"></td>
+    
+    </tr>
+      <tr>
+  
+        <td id="A4"></td>
+        <td id="B4"></td>
+        <td id="C4"></td>
+        <td id="D4"></td>
+        <td id="E4"></td>
+        <td id="F4"></td>
+        <td id="G4"></td>
+        <td id="H4"></td>
+  
+     </tr>
+      <tr>
+      
+        <td id="A3"></td>
+        <td id="B3"></td>
+        <td id="C3"></td>
+        <td id="D3"></td>
+        <td id="E3"></td>
+        <td id="F3"></td>
+        <td id="G3"></td>
+        <td id="H3"></td>
+      
+     </tr>
+      <tr>
+       
+        <td id="A2" class="WP">&#9817;</td>
+        <td id="B2" class="WP">&#9817;</td>
+        <td id="C2" class="WP">&#9817;</td>
+        <td id="D2" class="WP">&#9817;</td>
+        <td id="E2" class="WP">&#9817;</td>
+        <td id="F2" class="WP">&#9817;</td>
+        <td id="G2" class="WP">&#9817;</td>
+        <td id="H2" class="WP">&#9817;</td>
+     
+      </tr>
+      <tr>
+      
+        <td id="A1" class="WP">&#9814;</td>
+        <td id="B1" class="WP">&#9816;</td>
+        <td id="C1" class="WP">&#9815;</td>
+        <td id="D1" class="WP">&#9813;</td>
+        <td id="E1" class="WP">&#9812;</td>
+        <td id="F1" class="WP">&#9815;</td>
+        <td id="G1" class="WP">&#9816;</td>
+        <td id="H1" class="WP">&#9814;</td>
+       
+      </tr>
+
+  </table>
+
+        </div>
  
 
       </div><!-- 1:CONTENT -->
@@ -74,6 +184,33 @@
     </div><!-- 1:BOX -->
 
   </body>
+
+  <script type="text/javascript">
+
+function resize_table_chess( id )
+{
+  // $(id).width( 'auto' ).height( 'auto' );
+  $(id+' td, '+id+' th').width( 'auto' ).height( 'auto' ).css({ 'font-size':0.1+'em' });
+  // on redimensionne pour que le plateau tienne dans la fenêtre
+  //var sizT = Math.max( Math.max( $(id).width(), $(id).height()), Math.min( $(window).width() /2, $(window).height())); // -5px : marge
+  
+  var sizT = ($(window).height() /2);
+  if(window.innerWidth <= 768) {
+   sizT = ($(window).width() /2);
+  }
+
+  $(id).width( sizT ).height( sizT );
+  // on redimensionne les cases ET les pièces du jeu
+  var maxWH = sizT/8; // 10x10 cases
+  $(id+' td, '+id+' th').width( maxWH ).height( maxWH );
+  $(id+' td').css({ 'font-size':Math.floor(100*maxWH/16/1.4)/100+'em' });
+  $(id+' th').css({ 'font-size':Math.floor(100*maxWH/16/2.5)/100+'em' });
+};
+$(window).on( 'load resize', function(){
+  resize_table_chess('.chess_table');
+});
+
+  </script>
 
 </html>
 
