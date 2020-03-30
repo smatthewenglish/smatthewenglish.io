@@ -154,13 +154,13 @@ p {
 }
 
 .box .row.footer {
-    flex-grow: 1;
+    flex-grow: 0;
     flex-shrink: 1;
     flex-basis: fit-content;
 
     background: black;
-
-    height: fit-content;
+/*height: auto;*/
+    
 
     display: flex;
     flex-direction: row;
