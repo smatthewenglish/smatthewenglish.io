@@ -522,7 +522,9 @@ z-index: 9999999999;
         flex-basis: fit-content;
 
         background: black;
-        height: fit-content;
+        
+        padding-top: 1px;
+        padding-bottom: 1px;
 
         overflow: scroll;
         width: 100%;

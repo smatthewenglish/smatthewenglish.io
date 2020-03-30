@@ -1,12 +1,15 @@
-
-* { 
-  font-family: Roboto, sans-serif;  
-	overflow: hidden;
-}
-
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+* {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 2px;
+  line-height: 1.5;
 }
 
 #particles_background {
@@ -73,6 +76,7 @@ html, body {
   display: flex;
   flex-flow: column;
   height: 100%;
+  width: 100%;
 }
 
 .box .row {
@@ -102,24 +106,7 @@ html, body {
 
 
 
-.box .row.footer {
-	/* border: 5px dashed green;*/
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: fit-content;
 
-  background: black;
-  
-  height: fit-content;
-
-  padding-top: 8px;
-  padding-bottom: 8px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
 
 .title {
   /* border: 1px solid yellow;*/
@@ -127,35 +114,129 @@ html, body {
 	position: fixed;
 }
 
-.footer_member {
-  /* border: 1px solid yellow;*/
-  width: fit-content;
-/*  margin-top: 8px;
-  margin-bottom: 8px;*/
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+
+.box .row.footer {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: fit-content;
+
+    background: black;
+/*height: auto;*/
+    
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*  z-index: 99999999;*/
+    
 }
 
-.footer_box {
-  margin-top: 4px;
-  margin-bottom: 4px;
-  margin-right: 2px;
-  margin-left: 2px;
+.footer-social-icons {
+    width: fit-content;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.footer_box a {
-  color: #fff;
-  text-decoration: none;
+.social-icon {
+    color: #fff;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    background-color: #322f30;
+
+    padding: 0px;
+    border-radius: 3px;
 }
 
-.footer_img {
-  height: 35px;
-  padding:5px;
-  background-color: #322f30;
-  border-radius: 4px;
+#icon {
+    /*  padding: 10px 14px;
+  border-radius: 4px;*/
+
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    padding-right: 6px;
+
+    padding-left: 6px;
+
+    border-radius: 3px;
 }
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-instagram:hover {
+    color: #fff;
+    vertical-align: middle;
+    background-color: #d6249f;
+    background: radial-gradient(circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%);
+}
+
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+
+.fa-github:hover {
+    background-color: #5a32a3;
+}
+
+.fa-apple:hover {
+    background-color: #7d7d7d;
+}
+
+.fa-stack-overflow:hover {
+    background-color: #ff9900;
+}
+
+.ai-google-scholar-square:hover {
+    background-color: #4285f4;
+}
+
+.fa-soundcloud:hover {
+    color: #fff;
+    vertical-align: middle;
+    background-color: #d6249f;
+    background: linear-gradient(#ff7700, #ff3801);
+}
+
+.fa-envelope:hover {
+    background-color: #f0f;
+}
+
+.fa-spotify:hover {
+    background-color: #1db954;
+}
+
+.fa-reddit:hover {
+    background-color: #ff5700;
+}
+
+.fa-medium:hover {
+    background-color: #00ab6c;
+}
+
+.fa-meetup:hover {
+    background-color: #ed1c40;
+}
+
+.fa-telegram:hover {
+    background-color: #0088cc;
+}
+
 
 @media only screen and (max-width: 899px) { 
   .title {
@@ -164,21 +245,7 @@ html, body {
     top: 0px;
   }
 
-  .footer_box {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 2px;
-    margin-left: 2px;
-  }
 
-  .footer_member {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .box .row.footer {
-    padding-bottom: 0px;
-  }
 
   #map_usa {
   /*padding-right: 200px;*/
@@ -188,6 +255,39 @@ html, body {
 /*  border: 5px dotted magenta;*/
 
 }
+
+    .box .row.footer {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: fit-content;
+
+        background: black;
+    
+        padding-top: 1px;
+        padding-bottom: 1px;
+        overflow: scroll;
+        width: 100%;
+
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-social-icons {
+        width: fit-content;
+        /*   margin-right: 3px;
+    margin-left: 3px;*/
+
+        padding-right: 3.5px;
+        padding-left: 3.5px;
+        padding-top: 3px;
+        padding-bottom: 7px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
 }
 
