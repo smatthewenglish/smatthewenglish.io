@@ -13,7 +13,7 @@ body {
 * {
     font-family: Roboto, sans-serif;
     letter-spacing: 2px;
-    line-height: 1.5;
+    line-height: 1.25;
 }
 
 h2 {
@@ -23,7 +23,8 @@ h2 {
 }
 
 p {
-    margin-bottom: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
     color: black;
 }
 
@@ -60,7 +61,8 @@ p {
 .section_b {
     height: 100%;
     width: 50%;
-    background-color: green;
+    /*background-color: #0f0;*/
+
 
     display: flex;
     flex-direction: column;
@@ -72,6 +74,8 @@ p {
 
 /** {margin:0; padding:0; }*/
 table.chess_table {
+
+   box-shadow: 1px 1px 2px black, 0 0 25px #0f0, 0 0 5px black;
 
     /* width:100%; */
     /* min-width:8em; */
@@ -722,7 +726,7 @@ table.chess_table {
     .section_b {
         height: 50%;
         width: 100%;
-        background-color: green;
+        /*background-color: green;*/
 
     }
 
