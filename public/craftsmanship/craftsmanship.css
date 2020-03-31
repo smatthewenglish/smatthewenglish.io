@@ -29,6 +29,13 @@ p {
 }
 
 
+/*.more {
+    font-weight: bold;
+    color: #f0f;
+    text-shadow: 0.5px 0.5px 0.5px black;
+}*/
+
+
 .box .row.content {
     flex-grow: 1;
     flex-shrink: 1;
