@@ -228,9 +228,10 @@ p {
         flex-basis: fit-content;
 
         background: black;
-        height: 165px;
+        height: 200px;
 
-        overflow: scroll;
+      overflow-y: hidden;
+        overflow-x: scroll;
         width: 100%;
 
 

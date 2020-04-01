@@ -490,4 +490,24 @@ table.chess_table {
 
     }
 
+
+       .box .row.footer {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: fit-content;
+
+        background: black;
+        height: 52.5px;
+
+        overflow-y: hidden;
+        overflow-x: scroll;
+        width: 100%;
+
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
 }

@@ -399,4 +399,25 @@
      margin-left: 2.5%;
     margin-right: 2.5%;
 }
+
+
+ .box .row.footer {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: fit-content;
+
+        background: black;
+        height: 149px;
+
+        overflow: scroll;
+        width: 100%;
+
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
 }
