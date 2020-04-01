@@ -3,8 +3,6 @@
  */
 
 * {
-    line-height: 2.1;
-    letter-spacing: 2px;
     font-family: Roboto, sans-serif;
 }
 
@@ -23,6 +21,8 @@ h2 {
 }
 
 p {
+    line-height: 2.1;
+    letter-spacing: 2px;
     /*margin-bottom: 1.5em;*/
     color: black;
     font-size: 90%;
@@ -30,6 +30,11 @@ p {
     text-justify: inter-word;
 }
 
+    .photo {
+        max-width: 75%;
+    }
+
+    
 
 .highlight {
     font-size: 100%;

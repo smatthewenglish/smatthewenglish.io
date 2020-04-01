@@ -1,6 +1,24 @@
 /**
- * SME  
+ * CRAFTSMANSHIP  
  */
+
+.box .row.content {
+    
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+
+    overflow: scroll;
+    background: white;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#centerp {
+    text-align:center;  
+}
+
 
 .section_a {
     height: 100%;
@@ -301,12 +319,6 @@ table.chess_table tr th {
 
 
 
-
-
-
-
-
-
 @media only screen and (max-width: 768px) {
 
 
@@ -419,9 +431,26 @@ container
         transform: scale(0.35);
     }
 
-    
+  
 
+    .box .row.content {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
 
+       /* overflow: scroll;*/
+        background: white;
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        /* align-items: center;*/
+        /* justify-content: center;*/
+
+        padding-bottom: 30px;
+    }
 
 
 

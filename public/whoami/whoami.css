@@ -3,15 +3,15 @@
  */
 
 
+
 .whoami {
     height: 50%;
     z-index: 99999;
 }
 
-.a {
-    /*background-color: red;*/
-    min-height: 30%;
-    height: fit-content;
+.who_div0 {
+    height: 33%;
+   /* height: fit-content;*/
     width: 100%;
 
     overflow: hidden;
@@ -19,71 +19,53 @@
     flex-direction: row;
 
    /* padding-bottom: 1em;*/
- margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
-
-.a_image {
-    /*background-color: purple;*/
-    height: 100%;
-    width: 25%;
-
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-   
-}
-
-.a_text {
-    /*background-color: orange;*/
-    height: fit-content;
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-      overflow-y: scroll;
-}
-
-.b_image {
-    /* background-color: blue;*/
-    height: 100%;
-    width: 25%;
-
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-
-}
-
-.b_text {
-    /*background-color: magenta;*/
-    height: fit-content;
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-      overflow-y: scroll;
-}
-
-.b {
-    /* background-color: green;*/
-    min-height: 30%;
-    height: fit-content;
+.who_div1 {
+    height: 33%;
+   /* height: fit-content;*/
     width: 100%;
 
     overflow: hidden;
     display: flex;
     flex-direction: row;
 
-    margin-bottom: 1em;
+   /* padding-bottom: 1em;*/
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
+
+
+.who_image {
+    /*background-color: purple;*/
+    height: 100%;
+    width: 25%;
+
+   margin-left: 1em;
+    margin-right: 1em;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.who_text {
+    /*background-color: orange;*/
+    /*height: fit-content;*/
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+      overflow-y: scroll;
+
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
 
 
 
@@ -359,67 +341,62 @@
 @media only screen and (max-width: 768px) {
  
 
+   .who_div0 {
+    height: 33%;
+   /* height: fit-content;*/
+    width: 100%;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+      align-items: center;
+    justify-content: center;
+
+   /* padding-bottom: 1em;*/
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+   .who_div1 {
+    height: 33%;
+   /* height: fit-content;*/
+    width: 100%;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+   /* padding-bottom: 1em;*/
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+    
+
+.who_image {
+    /*background-color: purple;*/
+    height: 50%;
+    width: 100%;
+
+ 
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
    
 
-    .a {
-        /*  background-color: red;*/
-        height: 33%;
-        width: 100%;
+.who_text {
+    /*background-color: orange;*/
+    /*height: fit-content;*/
+     height: 50%;
+    width: 90%;
 
-        overflow: hidden;
-        display: flex;
-        flex-direction: column-reverse;
-
-    }
-
-    .fake {
-        width: 50%;
-    }
-
-
-    .a_image {
-        /* background-color: purple;*/
-        height: 50%;
-        width: 100%;
-
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .a_text {
-        /*background-color: orange;*/
-        height: 50%;
-        width: 100%;
-    }
-
-    .b_image {
-        /* background-color: blue;*/
-        height: 50%;
-        width: 100%;
-
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .b_text {
-        /*background-color: magenta;*/
-        height: 50%;
-        width: 100%;
-    }
-
-    .b {
-        /* background-color: green;*/
-        height: 33%;
-        width: 100%;
-
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-    }
+     margin-left: 2.5%;
+    margin-right: 2.5%;
+}
 }
