@@ -9,6 +9,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "d3": "^5.15.0",
+    "http-server": "^14.1.1",
     "particles-bg": "^2.4.7",
     "react": "^16.13.0",
     "react-awesome-button": "^6.3.1",
@@ -39,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines" : { 
+    "node" : ">=16.0.0"
   }
 }
